@@ -23,7 +23,7 @@ int main()
             maxi = i;
         }
     }
-    int ans = maxi + abs(t - mini);
+    int ans = maxi + abs(t -1- mini);
     if (mini < maxi)
         cout << ans - 1;
     else
