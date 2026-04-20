@@ -11,18 +11,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout repo
+      # Step 1: Checkout code
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # Step 2: Install compiler (optional but safe)
+      # Step 2: Install compiler
       - name: Install g++
         run: sudo apt-get update && sudo apt-get install -y g++
 
-      # Step 3: Compile code
+      # Step 3: Compile
       - name: Compile
         run: g++ main.cpp -o main
 
-      # Step 4: Run program
+      # Step 4: Run
       - name: Run
         run: ./main
